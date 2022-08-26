@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Datavis</title>
+    <link rel="stylesheet" href="styles/chart.css" />
+    <script type="text/javascript" src="scripts/data.js" defer></script>
+  </head>
+  <body>
+    <div class="chart-container">
+      <div id="diagCont" class="diag-container"></div>
+    </div>
+
+    <div class="button-container">
+      <button
+        type="button"
+        id="generateNumbers"
+        onclick="generateRandomArray()"
+      >
+        Generate New Numbers
+      </button>
+      <button type="button" id="shuffle" onclick="shuffle(dataArray.values)">
+        Shuffle Array
+      </button>
+      <button type="button" id="start" onclick="start()">Start</button>
+      <input id="timer" type="range" min="1" max="100" value="50" />
+
+      <labels for="algorithms">Choose an Algo:</labels>
+      <select name="algorithms" id="algos">
+        <option value="bubble">Bubble Sort</option>
+        <option value="merge">Merge Sort</option>
+      </select>
+    </div>
+  </body>
+</html>
